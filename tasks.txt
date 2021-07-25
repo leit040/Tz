@@ -1,4 +1,4 @@
-﻿1. PHP
+﻿﻿1. PHP
 
 Code a function that returns the number all unique case-insensitive characters that occur >= $n times in a given string.
 
@@ -112,3 +112,5 @@ a) Select all people, who get paid more than their direct chiefs
 b) Select a list of all offices along with a person with the highest wage in each. if more than one person has the highest wage, display them all. The office should be selected even if it has no people.
 c) Select all chiefs, who have exactly one direct subordinate.
 d) Select all offices sorted by total wage of people in it, descending.
+
+

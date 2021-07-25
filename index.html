@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+<p>Before scripts...</p>
+
+<script>
+  function hello(num){
+    let string = '';
+
+    num = String(num);
+
+    for(let i=0;i<num.length;i++){
+        if(num[i]%2) {
+            if(i==0 ){
+            string += "-"+num[i];
+            }
+            if(num[i-1]%2){
+               string += num[i];
+                }else{
+                    string += "-"+num[i];
+                }
+
+        }else{
+             if(i==0){
+                 string += num[i];
+             }else {
+                    if(num[i-1]%2 )
+                    {string += "-"+num[i];}
+            else{
+                        string +=num[i];
+            }}
+
+
+        }
+
+
+
+    }
+
+
+
+  return string;
+  }
+ alert(hello(233345511132888277));
+
+
+</script>
+
+<p>...After scripts.</p>
+
+</body>
+
+</html>
