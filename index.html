@@ -34,6 +34,19 @@
 
     alert(addDashes(2135884477958));
 
+let myArray = ['Panda', 'pants', 'span', 'panel', 'picnic', 'pacman'];
+function autocomplete(str, arr) {
+    let newArr = [];
+    let reg = str.split(" ").map(function(element) {return element.substr(0,3)});
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].substr(0,3).toLowerCase() == reg) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(autocomplete('panic', myArray))
+
 
 </script>
 
